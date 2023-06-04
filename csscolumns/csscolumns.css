@@ -1,0 +1,39 @@
+body{
+    font-family:sans-serif;
+    font-size:30px;
+}
+
+.columns{
+    columns : 4 150px;
+    column-rule: 3px solid grey;
+    column-gap: 3rem;
+
+}
+.columns p{
+    margin-top:0;
+}
+
+.columns h2{
+    margin-top:0;
+    background-color: black;
+    color:white;
+    padding:1rem;
+    break-inside: avoid;
+    /* break-before: column; */
+}
+
+.columns .quote{
+    margin-top:2rem;
+    font-size:3rem;
+    text-align: center;
+    color:black;
+    column-span:all;
+}
+
+/* <!-- You will be surprised after seeing no change( in the code if it is just .quote ) even after setting margin:2rem in .quote , it is because we already set margin-top:0; in .columns p . It has more specificity than .quote. That is why there is no change in the code.
+
+We applied .columns quote after that--> */
+
+.nowrap{
+    white-space: nowrap;
+}

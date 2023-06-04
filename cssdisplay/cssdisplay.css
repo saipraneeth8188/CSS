@@ -1,0 +1,51 @@
+body{
+    font-family:sans-serif;
+    font-size:30px;
+}
+
+
+p{
+    color:black;
+    background-color: lightblue;
+}
+/* .highlight{
+    display:inline-block;
+    color:blue;
+    background-color: aqua;
+    padding:6rem;
+    height:200px;
+    border-radius: 5px;
+    border:5px solid red;
+    border-radius:10px;
+    text-align: end;
+    margin-top:50px;
+} */
+
+/* <!-- Inline-block property didn't create new line --> */
+
+ul{
+    margin:0;
+    padding:0;
+    text-align: right;
+    list-style : none;
+    background-color: aqua;
+    display:block;
+}
+
+li{
+    display:inline-block;
+    font-size:40px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-inline: 1rem;
+    padding-right:1rem;
+    text-decoration:none;
+
+}
+li a{
+    text-decoration: none;
+    color:white;
+}
+
+li a:hover,li a:focus{
+    text-decoration: underline;
+}
