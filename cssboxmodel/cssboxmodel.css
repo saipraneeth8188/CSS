@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container{
+    border: 10px double red;
+    /* border-top:5px solid green;
+    border-bottom:10px dotted blue; */
+   
+    font-size: 1.5rem;
+    /* margin-top:1.5em;
+    margin-left:2em;
+    margin-right:2em;
+    margin-bottom:1em */
+    padding : 1.5em 2em 3em 4em;
+    margin:1.5em;
+    outline:5px solid purple;
+    outline-offset : 5px;
+
+}
+
+/* <!-- What border-box does is that; we have given width of 400px , so it counts the entire content+padding+border to be 400 -->
+<!-- Whereas in case of content-box it puts the content to be 400px --> */
+
+/* <!-- margin:1.5em ( It applies to all top,bottom,left and right)
+    Usually the order goes in this way top,right,bottom,left)
+    --> */
+
+    /* <!-- We also have border-top-color, border-top-width, border-top-style -- > */
+
+.circle{
+    margin:3rem auto;
+    background-color: gold;
+    width:100px;
+    height:100px;
+    border:2px solid black;
+    border-radius:50px;
+    outline:2px solid red;
+    outline-offset:0.25rem;
+}
