@@ -1,0 +1,129 @@
+/* || RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  :root{
+    /* FONT */
+    --FF : sans-serif;
+    --FS : 1.5rem;
+
+
+    /* COLOR */
+    --BGCOLOR :#475569;
+    --ALT-BGCOLOR : #1E293B;
+    --RADIAL-COLOR : whitesmoke;
+    --LIGHT-COLOR : whitesmoke;
+    --DARK-COLOR: black;
+
+
+    /* GENERAL */
+    --PADDING : 0.5rem;
+    --SHADOWS : 0 6px 5px -5px var(--DARK-COLOR);
+    --BORDERS :2px solid var(--DARK-COLOR);
+
+
+    /* SQUARE */
+    --SQUARE-BGCOLOR:papayawhip;
+    --SQUARE-SIZE:max(150px,20vw);
+
+
+  }
+
+  @media (prefers-color-scheme:dark){
+    :root{
+        --BGCOLOR:black;
+        --ALT-BGCOLOR:#333;
+        --RADIAL-COLOR:gray;
+        --SQUARE-BGCOLOR:purple;
+        
+    }
+  }
+
+  /* <!-- By using the variables we can avoid using the same colors and font again and again, we can just use these variable names --> */
+  
+  /* || GENERAL STYLES */
+  body {
+    font: var(--FS) var(--FF);
+    min-height: 100vh;
+  
+    background-color : var(--BGCOLOR);
+    background-image: radial-gradient(var(--RADIAL-COLOR), var(--BGCOLOR));
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header,
+  nav,
+  footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+  }
+  footer {
+    position: sticky;
+    
+    background-color: var(--ALT-BGCOLOR);
+    color: var(--LIGHT-COLOR);
+
+    bottom: 0;
+  }
+  header,footer
+   {
+    position : sticky;
+    
+    background-color: var(--ALT-BGCOLOR);
+    color : var(--LIGHT-COLOR);
+  }
+
+  main{
+    flex-grow:1;
+
+    pading:10px 0;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow:row wrap;
+    gap:min(4vw,15px);
+    
+  }
+  
+  header {
+    top: 0;
+  }
+  
+  nav {
+    background-color: var(--LIGHT-COLOR);
+    color: var(--DARK-COLOR);
+    padding: var(--PADDING);
+    border-bottom: var(--);
+    box-shadow: var(--SHADOWS);
+  }
+  
+/* <! -- BOX SHADOW - IT IS USED TO CREATE THE SHADOW UNDER THE NAV MENU, CHECK THE OUTPUT PAGE FOR THE CHANGES --> */
+.square--highlight{
+    --SQUARE-BGCOLOR:cornflowerblue;
+}
+
+
+.square{
+    display:grid;
+    place-content:center;
+    background-color: var(--SQUARE-BGCOLOR);
+    width:var(--SQUARE-SIZE);
+    height:var(--SQUARE-SIZE);
+    border:var(--BORDERS);
+    border-radius:15px;
+    font-size:40px;
+    box-shadow: var(--SHADOWS);
+}
+
+
+
+  
+  
+  
