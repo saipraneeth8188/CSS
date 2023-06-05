@@ -1,0 +1,46 @@
+header{
+    font-family: sans-serif;
+    background-color: yellow;
+    text-align: center;
+
+
+}
+/* section{
+    font-size: 25px;
+    /* column-count: 4;
+    column-width: 100px; */
+    /* columns: 3 auto;
+    column-rule: 3px solid black;
+
+} */ 
+body{
+    margin:0;
+}
+p{
+    margin:0;
+}
+h3{
+    background-color: black;
+    color:white;
+    padding:1rem;
+    break-inside: avoid;
+}
+
+.practice{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    columns:3 auto;
+    column-gap: 3rem;
+    column-rule: 3px solid black;
+    margin-top:0;
+}
+
+.quote{
+    text-align: center;
+    color:blue;
+    column-span: all;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
