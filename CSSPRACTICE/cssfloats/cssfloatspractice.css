@@ -1,0 +1,46 @@
+body{
+    font-family:sans-serif;
+    font-size:20px;
+}
+.block{
+    border:5px;
+    background-color: red;
+    float:left;
+    height:30vw;
+    width:30vw;
+    margin-right:10px;
+    display: flow-root ;
+}
+.right{
+    border:5px;
+    background-color:aqua;
+    float:right;
+    height:30vw;
+    width:20vw;
+    margin:1rem;
+    
+}
+.left{
+    text-align:center;
+    border:5px;
+    background-color: blue;
+    float:left;
+    height:30vw;
+    width:30vw;
+    margin-left:30px
+}
+.clear{
+    clear:both;
+}
+
+section{
+    border:3px solid black;
+    overflow:auto;
+
+}
+p{
+    margin-left:10px;
+}
+.clear{
+    clear:both;
+}
