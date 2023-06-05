@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+body{
+    padding:10%;
+    font-size:2rem;
+    font-family:'Roboto', sans-serif;
+
+}
+/* input,button{
+    font:inherit;
+
+}
+ */
+
+ /* <!-- font-family:'Courier New', Courier, monospace; in this command it looks for the first font Courier New if is not there then it looks for the Courier even if it is absent then it looks for the monospace --> */
+
+/* <!-- Here we have inherited the font size because input and submit doesnt inherit the font-size --> */
+
+
+    /* text-indent: 2em; */
+    /* text-decoration:underline;
+    text-transform: capitalize;
+    text-align:justify;
+ */
+
+
+ /* p{
+    line-height:1.5;
+    letter-spacing: 0.25em;
+    word-spacing: 0.5em;
+    font-weight:900;
+    font-style: italic;
+ } */
+p{
+    line-height:1.5;
+}

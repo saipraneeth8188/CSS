@@ -1,0 +1,47 @@
+/* header{
+    width:80%;
+}
+h1{
+    border : 2px dashed red;
+    width : 50%;
+} */
+
+/* <!-- In the above scenario we has set the header width to 80% so it takes 80% of the page and after that we declared h1 width to be 50% , here it takes 50% from those 80% --> */
+
+/* <!-- font-size:16px is the default value in the webpage --> */
+
+*{
+    margin :0;
+    padding :0;
+    box-sizing : border-box;
+}
+
+body{
+    min-height:100vh;
+}
+h1{
+    border: 2px dashed red;
+    width : 50%;
+    font-size :3rem;
+    padding : 0.5em;
+
+}
+main {
+    
+    font-size: 2rem;
+}
+
+
+p{
+    font-size: 2rem;
+    width : 40ch;
+}
+
+/* <!-- 1rem means 16px which is the default size, 2rem means 32px --> */
+/* <!-- rem -font size of the root element in our case it is the font size which is given in the html { } , by default it is 16px , so when we declare 1rem it considers are 16px --> */
+
+/* <!-- rem - relates to font size of root element ( html element)
+     em - relates to font size of parent element (parent element
+     em - Font size of the parent, in the case of typographical properties like font-size, and font size of the element itself, in the case of other properties like width -->) */
+
+/* <!-- in case of 2em here the <p> looks at <main> element and if <main> has 32px , then <p> takes 2*32 which means 64px --> */
